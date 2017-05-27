@@ -2,16 +2,30 @@ from flask import Flask, render_template
 from flask import jsonify
 from NameRnn import *
 import json
+import requests
+
 
 app = Flask(__name__)
 app.debug = True
 nrn = NameRnn()
 
+def getName():
+    url="http://burgundy.io:8080"
+    response=requests.get(url)
+    data = response.content
+#    data = json.loads(response.content)
+    return data
+
 @app.route("/")
 def mainpage():
     entries = nrn.get(5)
     print entries
-    return render_template('landing_page.html', entries=entries)
+    return render_template('landing_page.html')
+
+@app.route("/results")
+def results():
+    name = getName()
+    return render_template('show_results.html', name=name)
 
 #def checkin():
 #    functionality = 'not functional'
