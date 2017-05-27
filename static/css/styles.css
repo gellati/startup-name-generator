@@ -6,3 +6,25 @@
     color: white;
     background-color: black;
 }
+
+.landing_lead {
+    padding: 50px 100px 50px 250px;
+    font-size: 250%;
+}
+
+#landing_heading {
+    position: fixed; 
+    top: 50px; 
+    left: 200px; 
+    overflow: visible;
+    font-size: 8em;
+    width: 30%;
+    border:red 1px solid; 
+    z-index: 999;
+}
+
+#create_name {
+    margin-top: 60%;
+    margin-left: 30%;
+    font-size: 300%;
+}

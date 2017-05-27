@@ -11,7 +11,7 @@ nrn = NameRnn()
 def mainpage():
     entries = nrn.get(5)
     print entries
-    return render_template('show_entries.html', entries=entries)
+    return render_template('landing_page.html', entries=entries)
 
 #def checkin():
 #    functionality = 'not functional'

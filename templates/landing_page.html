@@ -1,19 +1,19 @@
 {% extends "layout.html" %}
 {% block body %}
 
-  <div class="" style="position: relative; bottom: 0px; border:red 1px solid; overflow:visible;">
+  <div id="landing_heading" class="inverted">
     <h1>Company name that gets you funded</h1>
   </div>
 
-  <div class="col-xs-12 col-md-5" style="background-color:#444;color:white;">
+  <div class="col-xs-12 col-md-5 inverted">
     
-    <p>
+    <p class="lead landing_lead">
       Unicorn intuitive user story iterate long shadow Steve Jobs sticky note iterate. Physical computing earned media quantitative vs. qualitative affordances entrepreneur 360 campaign grok thought leader hacker grok quantitative vs. qualitative.
     </p>
   </div>
 
   <div class="col-xs-12 col-md-7">
-    <button type="button" class="btn btn-primary btn-lg" id="create_name">Create a name</button>
+    <a href="/results"><button type="button" class="btn btn-primary btn-lg" id="create_name">Create a name</button></a>
   </div>
 
 {% endblock %}
