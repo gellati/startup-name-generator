@@ -11,7 +11,12 @@ nrn = NameRnn()
 def mainpage():
     entries = nrn.get(5)
     print entries
-    return render_template('show_entries.html', entries=entries)
+    return render_template('landing_page.html', entries=entries)
+
+@app.route("/results")
+def results():
+    results = {'name': 'Nimi2'}
+    return render_template('show_results.html', name=results)
 
 #def checkin():
 #    functionality = 'not functional'
