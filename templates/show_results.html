@@ -1,17 +1,27 @@
 {% extends "layout.html" %}
 {% block body %}
 
-  <div class="col-xs-12 col-md-6" style="background-color:#000;color:white;">
-    <h1>Here is your new name {{name}}</h1>
-  </div>
-
-  <div class="col-xs-12 col-md-6">
-    <div id="tablet-name"></div>
+  <div class="col-xs-12 col-md-5 inverted">
+    <h1>Here is your new name
+      <div id="head-name">{{name.upper()}}
+      <img src="{{url_for('static', filename='images/heart.png')}}" width="10%">
+      </div></h1>
+      <div id="table-image">
+        <div id="tablet-name">{{name.title()}}</div>
+        <div id="phone-name">{{name.title()}}</div>
+      <img src="{{url_for('static', filename='images/tabletphone.png')}}">
+    </div>
     <div id="phone-name"></div>
   </div>
-  <div class="col-xs-12 col-md-6">
-    <div id="businesscard-name"></div>
-    <div id="article-name"></div>
+  <div class="col-xs-12 col-md-7">
+      <div id="businesscard-image">
+        <div id="businesscard-text"><div id="businesscard-name">{{name.title()}}</div>Best in what in class</div>
+      <img id="businesscard-img" src="{{url_for('static', filename='images/business_card.jpg')}}" style="width: 50%; margin-left: 30%;">
+    </div>
+    <div id="article-image">
+      <div id="article-text"><div id="article-name">{{name.title()}}</div> gets 3 million $ funding</div>
+      <img src="{{url_for('static', filename='images/newspaper.jpg')}}" width="100%" >
+    </div>
   </div>
 
 {% endblock %}

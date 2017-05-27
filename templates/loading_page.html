@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="col-xs-12 col-md-5 inverted">
+
+
+  <div id="landing_heading" class="inverted">
+        <div class="animate-flicker"><h1>Loading your results</h1></div>
+  </div>
+
+</div>
+
+
+   <script type="text/JavaScript">
+        //setTimeout("location.href = '/results';",1500);
+        setTimeout(function () {
+   window.location.href = "/results"; //will redirect to your blog page (an ex: blog.html)
+}, 2000); //will call the function after 2 secs.
+   </script>
+
+
+
+{% endblock %}
