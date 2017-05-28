@@ -31,8 +31,6 @@ def writeImageText(image, text, xcoord, ycoord ):
 
 @app.route("/")
 def mainpage():
-    entries = nrn.get(5)
-    print entries
     return render_template('landing_page.html')
 
 @app.route("/loading")
