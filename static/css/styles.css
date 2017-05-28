@@ -60,8 +60,10 @@ body, html {
   box-shadow: none;
 }
 
-#head-name{background-color: gray; width: 106%; margin-left: -3%;}
+#head-name{background-color: gray; font-size: 40px;}
 #businesscard-image{} /* image styling is done inline */
+#heart-image{display: inline;}
+#name-container{}
 
 
 /* can remove this */
