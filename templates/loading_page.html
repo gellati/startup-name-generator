@@ -1,22 +1,20 @@
 {% extends "layout.html" %}
 {% block body %}
 
-<div class="">
 
 
-  <p class="animate-flicker lead">Loading your results</p></div>
-
-
-</div>
 
 
    <script type="text/JavaScript">
-        //setTimeout("location.href = '/results';",1500);
-    setTimeout(function () {
-      window.location.href = "/results"; //will redirect to your blog page (an ex: blog.html)
-    }, 10000); //will call the function after 2 secs.
+
+
+      //setTimeout("location.href = '/results';",1500);
+      setTimeout(function () {
+        window.location.href = "/results";
+      }, 2000);
+
    </script>
 
-
+   <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
 {% endblock %}
