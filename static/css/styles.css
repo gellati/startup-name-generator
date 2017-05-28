@@ -1,21 +1,63 @@
 
-
+body, html {
+    min-height: 100%;
+    height: 100%;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+}
 
 /* Landing page */
 .inverted {
     color: white;
-    background-color: black;
+    background-color: #222;
+    
 }
 
-.landing_lead {
-    padding: 50px 100px 50px 250px;
-    font-size: 250%;
+#landing_lead {
+    padding: 200px 100px 50px 250px;
+    font-size: 200%;
+    position: absolute;
+    bottom: 100px;
+    font-weight:500;
 }
 
-.container{
-
+#funded {
+    color: white;
 }
 
+#landing_heading {
+    color: #ABABAB;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    overflow: visible;
+    width: 40%;
+    z-index: 999;
+    text-align: right;
+    
+    padding: 5px 20px 5px 20px;
+}
+#landing_heading h1 {
+    font-size: 4em;
+    font-weight:700;
+}
+
+.fixed-container{
+    min-height: 100%;
+    height: 100%;
+}
+
+.btn-custom,
+.btn-custom:hover,
+.btn-custom:focus {
+  background-color: white;
+  color: black;
+}
+
+.btn-custom:active {
+  background-color: white;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 
 #head-name{background-color: gray; font-size: 40px;}
 #businesscard-image{} /* image styling is done inline */
@@ -34,22 +76,15 @@
 #article-name{}
 */
 
-
-#landing_heading {
-    position: absolute;
-    top: 50px;
-    left: 200px;
-    overflow: visible;
-    font-size: 8em;
-    width: 30%;
-    border:red 1px solid;
-    z-index: 999;
-}
-
 #create_name {
     margin-top: 60%;
     margin-left: 30%;
     font-size: 300%;
+}
+
+#landing_left {
+    height: 100%;
+    min-height: 100%;
 }
 
 /*
