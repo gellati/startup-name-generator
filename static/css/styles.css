@@ -17,22 +17,20 @@
 }
 
 
-/*
-this is the positioning of the text on the results page
-TODO: replace this with backend rendering, much stabler to put text directly on image
-than try to position it with css
-*/
 #head-name{background-color: gray; width: 106%; margin-left: -3%;}
+#businesscard-image{} /* image styling is done inline */
+
+
+/* can remove this */
+/*
 #tablet-name{left: 30%; top: 30%; position: absolute; color: black; width: 50px;}
 #phone-name{left: 70%; top: 45%; position: absolute; color: black; width: 50px;}
 
 #businesscard-name{}
 #businesscard-text{left: 42%; top: 7%; position: absolute; color: black; width: 160px;}
-#businesscard-image{}
-
-#article-name{}
 #article-text{left: 5%; top: 50%; position: absolute; width: 150px;}
-
+#article-name{}
+*/
 
 
 #landing_heading {
