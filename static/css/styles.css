@@ -8,10 +8,12 @@ body, html {
 /* Landing page */
 .inverted {
     color: white;
-    background-color: #222;
-    min-height: 100%;
+    background-color: #222;    
+}
+
+#results_left {
     height: 100%;
-    
+    min-height: 100%;
 }
 
 #landing_lead {
