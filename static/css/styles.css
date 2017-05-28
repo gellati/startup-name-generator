@@ -8,8 +8,12 @@ body, html {
 /* Landing page */
 .inverted {
     color: white;
-    background-color: #222;
-    
+    background-color: #222;    
+}
+
+#results_left {
+    height: 100%;
+    min-height: 100%;
 }
 
 #landing_lead {
@@ -60,7 +64,9 @@ body, html {
 }
 
 #head-name{background-color: gray; font-size: 40px;}
-#businesscard-image{} /* image styling is done inline */
+#businesscard-image{
+
+} /* image styling is done inline */
 #heart-image{display: inline;}
 #name-container{}
 
