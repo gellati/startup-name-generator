@@ -18,14 +18,14 @@ def getName():
 #    data = json.loads(response.content)
     return data
 
-# TODO: not working yet
-def writeImageText(image, text, xcoord, ycoord ):
-    font = ImageFont.truetype("/usr/share/fonts/dejavu/DejaVuSans.ttf", 25)
-#    img = Image.new("RGBA", (200,200), (120,20,20))
-    draw = ImageDraw.Draw(img)
-    draw.text((0,0), "This is a test", (255,255,0), font=font)
+def writeImageText(imageData):
+    imagePath='./static/images/'
+    image = Image.open(imagePath+imageData[0]['img'])
     draw = ImageDraw.Draw(image)
-    img.save("a-")
+    for i in range(len(imageData)):
+        font = ImageFont.truetype("./static/fonts/SourceSansPro-Regular.ttf", imageData[i]['fontSize'])
+        draw.text((imageData[i]['xcoord'], imageData[i]['ycoord']), imageData[i]['text'], font=font, fill=(0, 0, 0, 170))
+    image.save(imagePath + "tt_" + imageData[0]['img'])
 
 
 
@@ -40,15 +40,27 @@ def loading():
 @app.route("/results")
 def results():
     name = getName()
-    article_text =  "gets 3 million $ funding"
-    businesscard_text = "Best in what in class"
-    return render_template('show_results.html', name=name)
+    articleData = [
+        {'name': name, 'img': 'newspaper.jpg', 'text': name.title(), 'xcoord': 30, 'ycoord': 620, 'fontSize': 80},
+        {'name': name, 'img': 'newspaper.jpg', 'text': 'gets 3 million $ funding', 'xcoord': 30, 'ycoord': 720, 'fontSize': 50}
+    ]
+    businesscardData = [
+        {'name': name, 'img': 'business_card.jpg', 'text': name.capitalize(), 'xcoord': 150, 'ycoord': 120, 'fontSize': 50},
+        {'name': name, 'img': 'business_card.jpg', 'text': 'Best in what', 'xcoord': 150, 'ycoord': 190, 'fontSize': 25},
+        {'name': name, 'img': 'business_card.jpg', 'text': 'in class', 'xcoord': 150, 'ycoord': 220, 'fontSize': 25}
+    ]
 
-#def checkin():
-#    functionality = 'not functional'
-#    if nrn is not None:
-#        functionality = "functional and healthy"
-#    return jsonify(functionality=functionality)
+    tabletData = [
+        {'name': name, 'img': 'tabletphone.jpg', 'text': name.capitalize(), 'xcoord': 130, 'ycoord': 70, 'fontSize': 20},
+        {'name': name, 'img': 'tabletphone.jpg', 'text': name.capitalize(), 'xcoord': 302, 'ycoord': 145, 'fontSize': 10}
+    ]
+
+    writeImageText(articleData)
+    writeImageText(businesscardData)
+    writeImageText(tabletData)
+#    writeImageText('business_card.jpg', businesscard_text, 50, 50)
+#    writeImageText('newspaper.jpg', article_text, 50, 200)
+    return render_template('show_results.html', name=name)
 
 @app.route("/get/<int:num>")
 def get(num):
