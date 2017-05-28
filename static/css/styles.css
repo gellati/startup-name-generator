@@ -9,6 +9,8 @@ body, html {
 .inverted {
     color: white;
     background-color: #222;
+    min-height: 100%;
+    height: 100%;
     
 }
 
@@ -60,7 +62,9 @@ body, html {
 }
 
 #head-name{background-color: gray; font-size: 40px;}
-#businesscard-image{} /* image styling is done inline */
+#businesscard-image{
+
+} /* image styling is done inline */
 #heart-image{display: inline;}
 #name-container{}
 
