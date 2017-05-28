@@ -1,16 +1,14 @@
 {% extends "layout.html" %}
 {% block body %}
-
   <div class="col-xs-12 col-md-5 inverted">
     <h1>Here is your new name</h1>
     <div id="name-container">
-      <div class="row">
-         <div class="row" id="head-name">{{name.upper()}}
+         <div class="row" id="head-name"><span style="margin-left: 5%; margin-right: 20%;">{{name.upper()}}</span>
         <div id="heart-image">
       <img src="{{url_for('static', filename='images/heart.png')}}" width="10%">
     </div>
   </div>
-</div>  </div>
+</div>
       <div id="table-image">
       <img src="{{url_for('static', filename='images/tt_tabletphone.jpg')}}">
     </div>
@@ -25,5 +23,4 @@
       <img src="{{url_for('static', filename='images/tt_newspaper.jpg')}}" width="100%" >
     </div>
   </div>
-
 {% endblock %}
