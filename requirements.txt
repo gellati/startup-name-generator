@@ -2,4 +2,5 @@ flask==0.10.1
 gunicorn==19.4.5
 numpy==1.10.2
 uwsgi==2.0.15
-pillow=4.1.1
+pillow==4.1.1
+requests==2.16.5
