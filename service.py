@@ -46,8 +46,8 @@ def results():
     ]
     businesscardData = [
         {'name': name, 'img': 'business_card.jpg', 'text': name.capitalize(), 'xcoord': 150, 'ycoord': 120, 'fontSize': 50},
-        {'name': name, 'img': 'business_card.jpg', 'text': 'Best in what', 'xcoord': 150, 'ycoord': 190, 'fontSize': 25},
-        {'name': name, 'img': 'business_card.jpg', 'text': 'in class', 'xcoord': 150, 'ycoord': 220, 'fontSize': 25}
+        {'name': name, 'img': 'business_card.jpg', 'text': 'Y Combinator', 'xcoord': 150, 'ycoord': 190, 'fontSize': 25},
+        {'name': name, 'img': 'business_card.jpg', 'text': 'Batch 137', 'xcoord': 150, 'ycoord': 220, 'fontSize': 25}
     ]
 
     tabletData = [
