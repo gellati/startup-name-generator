@@ -14,10 +14,11 @@ body, html {
 
 #landing_lead {
     padding: 200px 100px 50px 250px;
-    font-size: 200%;
+    
     position: absolute;
     bottom: 100px;
     font-weight:500;
+    text-align: justify;
 }
 
 #funded {
