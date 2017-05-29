@@ -4,7 +4,7 @@ Name generator for startups
 
 ## Description
 
-This projects creates names for startup that have difficulty coming up with their own name.
+This projects creates names for startups that have difficulty coming up with their own name.
 
 ## Setup
 
@@ -16,7 +16,7 @@ After the dependencies have been installed, the program can be run with
 
      python service.py
 
-Open a web browser and go to http://127.0.0.1:5000/ to see the webpage and get the name for your new not startup.
+Open a web browser and go to http://127.0.0.1:5000/ to see the webpage and get the name for your new hot startup.
 
 
 ## Technologies
