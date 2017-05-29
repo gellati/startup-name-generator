@@ -31,4 +31,6 @@ Names are generate [here](http://burgundy.io/)([source](https://github.com/shari
 
 Project based on an idea by [Kirill Soloviev](https://github.com/double-u-d), service design by Eevastiina Rindell, frontend coding by [Jere Suikkila](https://github.com/jeresuikkila) and backend/frontend coding by [Omar El-Begawy](https://github.com/gellati)
 
-This was a project for the Helsinki AngelHack 27-28.5.2017.
+This was a project for the [Helsinki AngelHack 27-28.5.2017](http://www.hackathon.io/angelhack-global-hackathon-series-helsinki).
+
+![Team pitching the idea at the hackathon finale](static/images/team_pitch.jpg "Team picture")
