@@ -8,7 +8,7 @@ body, html {
 /* Landing page */
 .inverted {
     color: white;
-    background-color: #222;    
+    background-color: #222;
 }
 
 #results_left {
@@ -37,9 +37,9 @@ body, html {
     width: 40%;
     z-index: 999;
     text-align: right;
-    
     padding: 5px 20px 5px 20px;
 }
+
 #landing_heading h1 {
     font-size: 4em;
     font-weight:700;
@@ -64,23 +64,10 @@ body, html {
 }
 
 #head-name{background-color: gray; font-size: 40px;}
-#businesscard-image{
-
-} /* image styling is done inline */
+#businesscard-image{} /* image styling is done inline */
 #heart-image{display: inline;}
 #name-container{}
 
-
-/* can remove this */
-/*
-#tablet-name{left: 30%; top: 30%; position: absolute; color: black; width: 50px;}
-#phone-name{left: 70%; top: 45%; position: absolute; color: black; width: 50px;}
-
-#businesscard-name{}
-#businesscard-text{left: 42%; top: 7%; position: absolute; color: black; width: 160px;}
-#article-text{left: 5%; top: 50%; position: absolute; width: 150px;}
-#article-name{}
-*/
 
 #create_name {
     margin-top: 60%;
@@ -91,35 +78,4 @@ body, html {
 #landing_left {
     height: 100%;
     min-height: 100%;
-}
-
-/*
-animation of the loading page
-*/
-
-@keyframes flickerAnimation {
-  0%   { opacity:1; }
-  50%  { opacity:0; }
-  100% { opacity:1; }
-}
-@-o-keyframes flickerAnimation{
-  0%   { opacity:1; }
-  50%  { opacity:0; }
-  100% { opacity:1; }
-}
-@-moz-keyframes flickerAnimation{
-  0%   { opacity:1; }
-  50%  { opacity:0; }
-  100% { opacity:1; }
-}
-@-webkit-keyframes flickerAnimation{
-  0%   { opacity:1; }
-  50%  { opacity:0; }
-  100% { opacity:1; }
-}
-.animate-flicker {
-   -webkit-animation: flickerAnimation 1s infinite;
-   -moz-animation: flickerAnimation 1s infinite;
-   -o-animation: flickerAnimation 1s infinite;
-    animation: flickerAnimation 1s infinite;
 }
