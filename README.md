@@ -10,7 +10,7 @@ This projects creates names for startups that have difficulty coming up with the
 
 [Clone](https://help.github.com/articles/cloning-a-repository/) the repository to your computer. The requirements.txt file contains the backend requirements, which can be installed with
 
-     pip install.txt
+     pip install -r requirements.txt
 
 After the dependencies have been installed, the program can be run with
 
